@@ -6,26 +6,26 @@ public class Atacante : ITipoJugador
 
     public void AplicarEntrenamientoFisico(Jugador jugador)
     {
-        throw new NotImplementedException();
+        jugador.AplicarEntrenamientoFisico(jugador);
     }
 
     public void AplicarEntrenamientoLirica(Jugador jugador)
     {
-        throw new NotImplementedException();
+        jugador.AplicarEntrenamientoLirica(jugador);
     }
 
     public void AplicarEntrenamientoTactico(Jugador jugador)
     {
-        throw new NotImplementedException();
+        jugador.AplicarEntrenamientoTactico(jugador);
     }
 
     public double GetPrecision(Jugador jugador)
     {
-        throw new NotImplementedException();
+        return jugador.GetPrecision(jugador);
     }
 
     public double Visiongeneral(Jugador jugador)
     {
-        throw new NotImplementedException();
+        return jugador.GetVisionGeneral(jugador);
     }
 }

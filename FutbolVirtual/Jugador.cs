@@ -11,27 +11,27 @@ public class Jugador
     public double HabilidadPases { get; set; }
     public ITipoJugador TipoJugador {get; set;}
 
-    internal void AplicarEntrenamientoFisico()
+    internal void AplicarEntrenamientoFisico(Jugador jugador)
     {
         TipoJugador.AplicarEntrenamientoFisico(this);
     }
 
-    internal void AplicarEntrenamientoLirica()
+    internal void AplicarEntrenamientoLirica(Jugador jugador)
     {
         TipoJugador.AplicarEntrenamientoLirica(this);
     }
 
-    internal void AplicarEntrenamientoTactico()
+    internal void AplicarEntrenamientoTactico(Jugador jugador)
     {
         TipoJugador.AplicarEntrenamientoTactico(this);
     }
 
-    public double GetPrecision ()
+    public double GetPrecision (Jugador jugador)
     {
         return TipoJugador.GetPrecision(this);
     }
 
-    public double GetVisionGeneral ()
+    public double GetVisionGeneral (Jugador jugador)
     {
         return TipoJugador.Visiongeneral(this);
     }
