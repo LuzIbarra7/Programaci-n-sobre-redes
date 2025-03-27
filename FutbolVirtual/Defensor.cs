@@ -6,26 +6,30 @@ public class Defensor : ITipoJugador
 
     public void AplicarEntrenamientoFisico(Jugador jugador)
     {
-        jugador.AplicarEntrenamientoFisico(jugador);
+        jugador.Potencia =+ 1;
+        jugador.HabilidadPases =+ 0.5;
+        quite =+ 0.5;
     }
 
     public void AplicarEntrenamientoLirica(Jugador jugador)
     {
-        jugador.AplicarEntrenamientoLirica(jugador);
+        jugador.HabilidadPases =+ 1;
+        jugador.VisionJuego =+ 0.5;
     }
 
     public void AplicarEntrenamientoTactico(Jugador jugador)
     {
-        jugador.AplicarEntrenamientoTactico(jugador);
+        jugador.VisionJuego =+ 0.5;
+        jugador.VisionCompaneros =+ 1;
     }
 
     public double GetPrecision(Jugador jugador)
     {
-        return jugador.GetPrecision(jugador);
+        return 3 * quite + jugador.HabilidadPases;
     }
 
     public double Visiongeneral(Jugador jugador)
     {
-        return jugador.GetVisionGeneral(jugador);
+        return jugador.VisionCompaneros + jugador.VisionJuego;
     }
 }

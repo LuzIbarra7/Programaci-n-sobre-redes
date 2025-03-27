@@ -4,6 +4,6 @@ public class SesionLirica : Sesion
 {
     public override void AplicarA(Jugador jugador)
     {
-        jugador.AplicarEntrenamientoLirica();
+        jugador.AplicarEntrenamientoLirica(jugador);
     }
 }

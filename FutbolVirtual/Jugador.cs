@@ -1,13 +1,11 @@
 ﻿
-
-
 namespace FutbolVirtual;
 
 public class Jugador
 {
     public double VisionJuego { get; set; }
     public double VisionCompaneros { get; set; }
-    public double Potencica { get; set; }
+    public double Potencia { get; set; }
     public double HabilidadPases { get; set; }
     public ITipoJugador TipoJugador {get; set;}
 
