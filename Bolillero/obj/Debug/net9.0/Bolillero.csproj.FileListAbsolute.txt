@@ -1,0 +1,5 @@
+c:\Users\Lab15-PC01\Documents\GitHub\Programaci-n-sobre-redes\Bolillero\obj\Debug\net9.0\Bolillero.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Lab15-PC01\Documents\GitHub\Programaci-n-sobre-redes\Bolillero\obj\Debug\net9.0\Bolillero.AssemblyInfoInputs.cache
+c:\Users\Lab15-PC01\Documents\GitHub\Programaci-n-sobre-redes\Bolillero\obj\Debug\net9.0\Bolillero.AssemblyInfo.cs
+c:\Users\Lab15-PC01\Documents\GitHub\Programaci-n-sobre-redes\Bolillero\obj\Debug\net9.0\Bolillero.csproj.CoreCompileInputs.cache
+c:\Users\Lab15-PC01\Documents\GitHub\Programaci-n-sobre-redes\Bolillero\obj\Debug\net9.0\Bolillero.sourcelink.json

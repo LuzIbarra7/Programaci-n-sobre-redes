@@ -1,11 +1,9 @@
-namespace Bolillero;
+namespace BolilleroCore;
 
 public class Bolillero
 {
-    public int JugarNveces { get; set; }
     public List<int> BolillasAdentro { get; set; } = new List<int>();
     public List<int> BolillasAfuera { get; set; } = new List<int>();
-    public int VecesaJugar { get; set; }
     ILogica Logica;
 
     public int SacarBolillas()
@@ -36,7 +34,7 @@ public class Bolillero
         return aciertos;
     }
 
-        public bool Jugar(IList<int> jugada)
+    public bool Jugar(IList<int> jugada)
     {
         foreach (var objetivo in jugada)
         {
@@ -52,7 +50,7 @@ public class Bolillero
 
         return true;
     }
-    
+
 
     public void ReIngresarBolillas()
     {

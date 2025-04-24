@@ -1,10 +1,11 @@
-namespace Bolillero;
-
+using BolilleroCore;
 public class SacarAzar : ILogica
 {
+    private readonly Random _rnd = new Random();
+
     public int SacarBolilla(Bolillero bolillero)
     {
-        private readonly Random _rnd = new Random();
-        public int Next(int minValue, int maxValue) => _rnd.Next(minValue, maxValue);
+        int indice = _rnd.Next(0,bolillero.BolillasAdentro.Count);
+        return bolillero.BolillasAdentro[indice];
     }
 }
