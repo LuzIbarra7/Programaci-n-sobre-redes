@@ -1,11 +1,25 @@
 namespace BolilleroCore;
 
-public class Bolillero
+public class Bolillero : IClonable
 {
-    public List<int> BolillasAdentro { get; set; } = new List<int>();
-    public List<int> BolillasAfuera { get; set; } = new List<int>();
+    public List<int> BolillasAdentro { get; set; }
+    public List<int> BolillasAfuera { get; set; }
     ILogica Logica;
+    public Bolillero(int cantidadBolillas, ILogica logica)
+    {
+        BolillasAdentro = new List<int>();
+        BolillasAfuera = new List<int>();
 
+        for (int numero = 0; numero < cantidadBolillas; BolillasAdentro.Add(numero++)) ;
+
+        Logica = logica;
+    }
+    private Bolillero(Bolillero original)
+    {
+        BolillasAdentro = new List<int>(original.BolillasAdentro);
+        BolillasAfuera = new List<int>(original.BolillasAfuera);
+        Logica = original.Logica;
+    }
     public int SacarBolillas()
     {
         int bolilla = Logica.SacarBolilla(this);
@@ -57,10 +71,13 @@ public class Bolillero
         BolillasAdentro.AddRange(BolillasAfuera);
         BolillasAfuera.Clear();
     }
+
+
+
+    public object CLone() => new Bolillero(this);
 }
 
 public interface ILogica
 {
     int SacarBolilla(Bolillero bolillero);
-
 }

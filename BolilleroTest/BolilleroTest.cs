@@ -1,4 +1,4 @@
-﻿
+﻿using BolilleroCore;
 namespace BolilleroCore;
 
 
@@ -8,19 +8,14 @@ public class BolilleroTests
 
     public BolilleroTests()
     {
-        ILogica logica = new SacarPrimero();
-
-        bolillero = new Bolillero(logica);
-
-        for (int numero = 0; numero < 10; numero++)
-            bolillero.BolillasAdentro.Add(numero);
+        bolillero = new Bolillero(10, new SacarPrimero());
     }
 
     [Fact]
     public void SacarBolilla()
     {
+        
         int bolilla = bolillero.SacarBolillas();
-
 
         Assert.Equal(0, bolilla);
 
