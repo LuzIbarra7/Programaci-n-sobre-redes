@@ -1,5 +1,4 @@
-﻿using BolilleroCore;
-namespace BolilleroCore;
+﻿namespace BolilleroCore;
 
 
 public class BolilleroTests
@@ -64,5 +63,6 @@ public class BolilleroTests
 
         Assert.Equal(1, ganadas);
     }
+
 }
 

@@ -9,7 +9,7 @@ public class Simulacion
         for (long i = 0; i < cantidad; i++)
         {
             Bolillero clon = (Bolillero)original.CLone();
-
+            //si la jugada de clon es igual a la jugada 
             if (clon.Jugar(jugada))
                 aciertos++;
         }
@@ -18,51 +18,38 @@ public class Simulacion
     }
 
 
+public static long SimularConHilos(Bolillero bolillero, List<int> jugada, long cantidadSimulaciones, int cantidadHilos)
+{   //Divide el total de la simulaciones por la cantiad de hilo
+    long simulacionesPorHilo = cantidadSimulaciones / cantidadHilos;
+    //Devuelve el sobrante de la division anterior
+    long sobrantes = cantidadSimulaciones % cantidadHilos;
 
-        public static long SimularConHilos(Bolillero original, List<int> jugada, long cantidadSimulaciones, int cantidadHilos)
-    {
-        long aciertos = 0;
+    //Por cada hilo crea una tarea nueva de tipo long
+    Task<long>[] tareas = new Task<long>[cantidadHilos];
 
-        var contador = new object();
-
-        void SimularEnHilo(long inicio, long fin)
+    for (int i = 0; i < cantidadHilos; i++)
+    {   
+        long simulacionesParaEsteHilo = simulacionesPorHilo + (i < sobrantes ? 1 : 0);
+        //se crea la tarea con el numero que tenga
+        tareas[i] = Task.Run(() =>
         {
-            for (long i = inicio; i < fin; i++)
+            long aciertos = 0;
+            Bolillero clon = (Bolillero)bolillero.CLone(); // Clonamos solo una vez por hilo
+
+            for (long j = 0; j < simulacionesParaEsteHilo; j++)
             {
-                Bolillero clon = (Bolillero)original.CLone(); 
-                if (clon.Jugar(jugada)) 
-                {
-                    
-                    lock (contador)
-                    {
-                        aciertos++;
-                    }
-                }
+                if (clon.Jugar(jugada))
+                    aciertos++;
             }
-        }
 
-        // Calcular el número de simulaciones por hilo
-        long simulacionesPorHilo = cantidadSimulaciones / cantidadHilos;
-        long sobrantes = cantidadSimulaciones % cantidadHilos; // Si no es divisible, repartir el sobrante
-
-        var tareas = new List<Task>();
-
-        // Crear las tareas para cada hilo
-        for (int i = 0; i < cantidadHilos; i++)
-        {
-            // Calcular los rangos de simulaciones que manejará cada hilo
-            long inicio = i * simulacionesPorHilo;
-            long fin = inicio + simulacionesPorHilo + (i < sobrantes ? 1 : 0);
-
-            // Asignar la tarea a un hilo
-            var tarea = Task.Run(() => SimularEnHilo(inicio, fin));
-            tareas.Add(tarea);
-        }
-
-        // Esperar a que todos los hilos terminen
-        Task.WhenAll(tareas).Wait();
-
-        return aciertos;
+            return aciertos;
+        });
     }
+    //Espera que termine tareas
+    Task.WaitAll(tareas);
+    // Suma los resultados de las tareas
+    long totalAciertos = tareas.Sum(t => t.Result);
+    return totalAciertos;
+}
 }
 
