@@ -70,6 +70,7 @@ public class Bolillero : IClonable
     {
         BolillasAdentro.AddRange(BolillasAfuera);
         BolillasAfuera.Clear();
+        BolillasAdentro.Sort();
     }
 
 

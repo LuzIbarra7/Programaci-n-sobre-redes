@@ -18,7 +18,7 @@ public class Simulacion
     }
 
 
-public static long SimularConHilos(Bolillero bolillero, List<int> jugada, long cantidadSimulaciones, int cantidadHilos)
+public  long SimularConHilos(Bolillero bolillero, List<int> jugada, long cantidadSimulaciones, int cantidadHilos)
 {   //Divide el total de la simulaciones por la cantiad de hilo
     long simulacionesPorHilo = cantidadSimulaciones / cantidadHilos;
     //Devuelve el sobrante de la division anterior
