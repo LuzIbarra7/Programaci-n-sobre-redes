@@ -51,5 +51,10 @@ public  long SimularConHilos(Bolillero bolillero, List<int> jugada, long cantida
     long totalAciertos = tareas.Sum(t => t.Result);
     return totalAciertos;
 }
+public async Task<long> SimularConHilosAsync(Bolillero bolillero, List<int> jugada, long cantidadSimulaciones, int cantidadHilos)
+    {
+        long resutado = await Task<long>.Run(() => SimularConHilos(bolillero, jugada, cantidadSimulaciones, cantidadHilos));
+        return resutado;
+    }
 }
 
