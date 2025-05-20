@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Programaci-n-sobre-redes\\Bolillero\\Bolillero.csproj",
+      "projectUniqueName": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\PSR_Bolillero\\Bolillero\\Bolillero.csproj",
       "projectName": "Bolillero",
-      "projectPath": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Programaci-n-sobre-redes\\Bolillero\\Bolillero.csproj",
+      "projectPath": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\PSR_Bolillero\\Bolillero\\Bolillero.csproj",
       "packagesPath": "C:\\Users\\Lab15-PC01\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\Programaci-n-sobre-redes\\Bolillero\\obj\\",
+      "outputPath": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\PSR_Bolillero\\Bolillero\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

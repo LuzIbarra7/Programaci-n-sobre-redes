@@ -10,3 +10,15 @@ c:\Users\Lab15-PC01\Documents\GitHub\Programaci-n-sobre-redes\Bolillero\obj\Debu
 c:\Users\Lab15-PC01\Documents\GitHub\Programaci-n-sobre-redes\Bolillero\obj\Debug\net9.0\refint\Bolillero.dll
 c:\Users\Lab15-PC01\Documents\GitHub\Programaci-n-sobre-redes\Bolillero\obj\Debug\net9.0\Bolillero.pdb
 c:\Users\Lab15-PC01\Documents\GitHub\Programaci-n-sobre-redes\Bolillero\obj\Debug\net9.0\ref\Bolillero.dll
+c:\Users\Lab15-PC01\Documents\GitHub\PSR_Bolillero\Bolillero\bin\Debug\net9.0\Bolillero.deps.json
+c:\Users\Lab15-PC01\Documents\GitHub\PSR_Bolillero\Bolillero\bin\Debug\net9.0\Bolillero.dll
+c:\Users\Lab15-PC01\Documents\GitHub\PSR_Bolillero\Bolillero\bin\Debug\net9.0\Bolillero.pdb
+c:\Users\Lab15-PC01\Documents\GitHub\PSR_Bolillero\Bolillero\obj\Debug\net9.0\Bolillero.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Lab15-PC01\Documents\GitHub\PSR_Bolillero\Bolillero\obj\Debug\net9.0\Bolillero.AssemblyInfoInputs.cache
+c:\Users\Lab15-PC01\Documents\GitHub\PSR_Bolillero\Bolillero\obj\Debug\net9.0\Bolillero.AssemblyInfo.cs
+c:\Users\Lab15-PC01\Documents\GitHub\PSR_Bolillero\Bolillero\obj\Debug\net9.0\Bolillero.csproj.CoreCompileInputs.cache
+c:\Users\Lab15-PC01\Documents\GitHub\PSR_Bolillero\Bolillero\obj\Debug\net9.0\Bolillero.sourcelink.json
+c:\Users\Lab15-PC01\Documents\GitHub\PSR_Bolillero\Bolillero\obj\Debug\net9.0\Bolillero.dll
+c:\Users\Lab15-PC01\Documents\GitHub\PSR_Bolillero\Bolillero\obj\Debug\net9.0\refint\Bolillero.dll
+c:\Users\Lab15-PC01\Documents\GitHub\PSR_Bolillero\Bolillero\obj\Debug\net9.0\Bolillero.pdb
+c:\Users\Lab15-PC01\Documents\GitHub\PSR_Bolillero\Bolillero\obj\Debug\net9.0\ref\Bolillero.dll

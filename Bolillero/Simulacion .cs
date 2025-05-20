@@ -56,5 +56,31 @@ public async Task<long> SimularConHilosAsync(Bolillero bolillero, List<int> juga
         long resutado = await Task<long>.Run(() => SimularConHilos(bolillero, jugada, cantidadSimulaciones, cantidadHilos));
         return resutado;
     }
+public async Task<long> SimularParallelAsync(Bolillero bolillero, List<int> jugada, long cantidadSimulaciones, int cantidadHilos)
+    {
+        var aciertos = new long[cantidadHilos];
+
+        int simulacionesPorHilo = (int)(cantidadSimulaciones / cantidadHilos);
+        long sobrantes = cantidadSimulaciones % cantidadHilos;
+
+        var opciones = new ParallelOptions()
+        {
+            //Cantidad maxima de tareas en paralelo
+            MaxDegreeOfParallelism = cantidadHilos
+        };
+
+        await Task<long>.Run(() =>
+            Parallel.For(0, cantidadHilos, opciones,
+            (i) =>
+            {
+                int simsParaEsteHilo = simulacionesPorHilo + (i < sobrantes ? 1 : 0);
+                Bolillero clon = bolillero.CLone();
+                aciertos[i] = clon.JugarNVeces(jugada, simsParaEsteHilo);
+            })
+        );
+
+        return aciertos.Sum();
+    }
+
 }
 

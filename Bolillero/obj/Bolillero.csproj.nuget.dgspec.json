@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Lab15-PC01\\Documents\\GitHub\\Programaci-n-sobre-redes\\Bolillero\\Bolillero.csproj": {}
+    "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\PSR_Bolillero\\Bolillero\\Bolillero.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Lab15-PC01\\Documents\\GitHub\\Programaci-n-sobre-redes\\Bolillero\\Bolillero.csproj": {
+    "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\PSR_Bolillero\\Bolillero\\Bolillero.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Lab15-PC01\\Documents\\GitHub\\Programaci-n-sobre-redes\\Bolillero\\Bolillero.csproj",
+        "projectUniqueName": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\PSR_Bolillero\\Bolillero\\Bolillero.csproj",
         "projectName": "Bolillero",
-        "projectPath": "c:\\Users\\Lab15-PC01\\Documents\\GitHub\\Programaci-n-sobre-redes\\Bolillero\\Bolillero.csproj",
+        "projectPath": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\PSR_Bolillero\\Bolillero\\Bolillero.csproj",
         "packagesPath": "C:\\Users\\Lab15-PC01\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Lab15-PC01\\Documents\\GitHub\\Programaci-n-sobre-redes\\Bolillero\\obj\\",
+        "outputPath": "C:\\Users\\Lab15-PC01\\Documents\\GitHub\\PSR_Bolillero\\Bolillero\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

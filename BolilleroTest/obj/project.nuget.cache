@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OSH6i2kr8xk=",
+  "dgSpecHash": "1+eNHiufMyg=",
   "success": true,
-  "projectFilePath": "c:\\Users\\Lab15-PC01\\Documents\\GitHub\\Programaci-n-sobre-redes\\BolilleroTest\\BolilleroTest.csproj",
+  "projectFilePath": "c:\\Users\\Lab15-PC01\\Documents\\GitHub\\PSR_Bolillero\\BolilleroTest\\BolilleroTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lab15-PC01\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\Lab15-PC01\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",

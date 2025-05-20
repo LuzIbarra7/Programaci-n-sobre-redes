@@ -75,7 +75,7 @@ public class Bolillero : IClonable
 
 
 
-    public object CLone() => new Bolillero(this);
+    public Bolillero CLone() => new Bolillero(this);
 }
 
 public interface ILogica

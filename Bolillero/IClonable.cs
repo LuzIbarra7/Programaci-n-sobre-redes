@@ -2,5 +2,5 @@ namespace BolilleroCore;
 
 public interface IClonable
 {
-    object CLone();
+    public Bolillero CLone();
 }
